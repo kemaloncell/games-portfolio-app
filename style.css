@@ -9,14 +9,14 @@ h1{
     font-size: 3rem;
     opacity: 0.8;
 }
-h3,p{
+h2,p{
     color:#658ec6;
     font-weight: 500;
     opacity: 0.8;
 }
 
 main{
-    font-family:"poppins", sans-serif;";
+    font-family:"poppins", sans-serif;
     min-height: 100vh; /* ekranın yüksekliğinin %1'i  */
     background: linear-gradient(to right top, #65dfc9, #6cdbeb);
     display: flex;
@@ -95,4 +95,66 @@ main{
     width :40%;
     color:white;
     font-weight: 600;
+}
+
+/* GAMES */
+
+.status{
+    margin-bottom: 3rem;
+}
+
+.status input{
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border:none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.games{
+    margin:5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left top, rgba(255,255,255,0.8), rgba(255,255,255,0.5));
+    border-radius: 1rem;
+    margin:2rem 0;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.212);
+}
+
+.progress{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after{
+    content:"";
+    background: rgba(236,236,236);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:60%;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage{
+    font-weight: bold;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    -webkit-background-clip: text; /* sadece texte background vermek için kullanılır */
+    -webkit-text-fill-color:transparent
 }
